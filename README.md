@@ -2,6 +2,7 @@
 
 
 
+
 ## 0x00 概述
 
 201909 harbor爆出可利用注册功能添加管理员漏洞，利用注册接口api/users，构造post参数"has_admin_role":true，可直接添加管理员。
@@ -10,11 +11,13 @@
 
 
 
+
 ## 0x01 需求
 
 python2.7
 
 pip install requests
+
 
 
 
@@ -27,6 +30,7 @@ pip install requests
 
 
 单url检测: python harbor-give-me-admin.py -u "https://www.xxx.com/"
+
 //如利用成功，则会添加管理员帐号test00,谨慎操作！
 
 ![](https://github.com/theLSA/harbor-give-me-admin/raw/master/demo/harbor00.png)
@@ -34,6 +38,7 @@ pip install requests
 
 
 批量检测: python harbor-give-me-admin.py -f urls,txt
+
 //如利用成功，则会添加管理员帐号test00,谨慎操作！
 
 
